@@ -39,12 +39,12 @@ body {
 
 header {
   width: 100%;
-  line-height: 10rem;
+  line-height: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-bottom: 0.1rem solid #9a9191;
   transform: rotate(-0.05deg);
-  margin-bottom: 7rem;
+  margin-bottom: 20px;
 }
 
 .continue-shopping {
@@ -59,7 +59,7 @@ header {
 }
 
 .continue-shopping h3 {
-  font-size: 2rem;
+  font-size: 18px;
   text-transform: capitalize;
   color: var(--main-color);
   margin-left: 1.5rem;
@@ -85,7 +85,7 @@ header {
   position: absolute;
   width: 4rem;
   height: 4rem;
-  right: -1.2rem;
+  right: -29px;
   top: 0.9rem;
   border-radius: 50%;
   background: #99cbf7;
@@ -101,7 +101,7 @@ header {
 .main-cart-section h1 {
   font-style: normal;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 20px;
   text-transform: capitalize;
   color: rgba(41, 41, 41, 1);
   margin-bottom: 1rem;
@@ -113,7 +113,7 @@ header {
   font-size: 1.8rem;
   text-transform: capitalize;
   color: var(--main-color);
-  margin-bottom: 5rem;
+  margin-bottom: 10px;
 }
 
 .total-items-count {
@@ -140,7 +140,7 @@ header {
 }
 
 .cart-items hr {
-  margin: 2rem auto;
+  margin: 12px auto;
   overflow-y: scroll;
 }
 
@@ -151,7 +151,7 @@ header {
 
 .items-info {
   width: 100%;
-  height: 11rem;
+  // height: 11rem;
   /* background-color: lavender; */
   margin: auto;
   display: grid;
@@ -160,7 +160,7 @@ header {
 
 .items-info .product-img img {
   width: 16rem;
-  height: 11rem;
+  height: 80px;
   filter: drop-shadow(0rem 0.4rem 1rem #f1f7ff);
   border-radius: 1rem;
 }

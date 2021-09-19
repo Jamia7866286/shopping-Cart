@@ -51,5 +51,23 @@ export const reducer = (state, action)=>{
             });
             return ({...state, item: updateCart});
       }
+
+      if(action.type === "Total_Items_Amount"){
+            let {totalItems, totalAmount} = state.item.reduce((accumulatedTotal, currItem)=>{
+                  accumulatedTotal.totalItems = accumulatedTotal.totalItems + currItem.quantity;
+                  const itemAmount = currItem.quantity * currItem.price;
+                  accumulatedTotal.totalAmount = itemAmount + accumulatedTotal.totalAmount;
+                  // console.log(itemAmount);
+                  return accumulatedTotal;
+
+            },
+            {
+                  totalItems:0,
+                  totalAmount:0,
+            });
+
+            return {...state, totalItems, totalAmount}
+      }
+
       return state;
 }

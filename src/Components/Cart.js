@@ -1,4 +1,4 @@
-import React, { createContext, useReducer } from 'react';
+import React, { createContext, useEffect, useReducer } from 'react';
 import ContextCart from './MainCart';
 import { products } from './Product_Data';
 import './shopingCart.scss';
@@ -47,6 +47,12 @@ const CartComponent = ()=> {
                   payload: id,
             });
       }
+
+      useEffect(()=>{
+            dispatch({
+                  type: 'Total_Items_Amount'
+            });
+      },[state.item]);
 
       return (
             <>
